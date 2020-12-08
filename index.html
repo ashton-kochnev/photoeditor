@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>photo editor</title>
+</head>
+<body>
+    <div class="image"><img src="i-am-groot.png" alt="groot"></div>
+    <div class="controls">
+        <span>Photo editor</span>
+        <label> Size: <input name="size" type="range" value="100"  min="25" max="100" data-size="%"></label>
+        <label> Blur: <input name="blur" type="range" value="0" min="0" max="5" data-size="px"></label>
+        <label> Opacity: <input name="opacity" type="range" value="100" min="0" max="100" data-size="%"></label>
+        <label> Contrast: <input name="contrast" type="range" value="100" min="50" max="150" data-size="%"></label>
+        <label> Invert: <input name="invert" type="range" value="0" min="0" max="100" data-size="%"></label>
+        <label> Sepia: <input name="sepia" type="range" value="0" min="0" max="100" data-size="%"></label>
+        <label> Hue rotate: <input name="hue-rotate" type="range" value="0" min="0" max="180" data-size="deg"></label>
+        <label> Grayscale: <input name="grayscale" type="range" value="0" min="0" max="100" data-size="%"></label>
+        <label> Base color: <input name="base" type="color" value="#321cf8"></label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

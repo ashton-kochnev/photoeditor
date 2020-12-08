@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Texturina', serif;
+    margin-top: 50px;
+    background-color: var(--base, #321cf8);
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+span {
+    text-align: center;
+    color: var(--base, #321cf8);
+    filter: invert(100%) sepia(100%);
+}
+.controls label {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.controls input {
+    cursor: pointer;
+}
+:root {
+    --size: 100%;
+    --blur: 0px;
+    --base: #321cf8;
+    --contrast: 100%;
+    --invert: 0%;
+    --sepia: 0%;
+    --hue-rotate: 0deg;
+    --opacity: 100%;
+    --grayscale: 0%
+}
+img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(255,255,255,0.5);
+    width: var(--size, 100%);
+    filter: blur(var(--blur, 0px)) opacity(var(--opacity, 100%)) contrast(var(--contrast, 100%)) invert(var(--invert, 0%)) sepia(var(--sepia, 0%)) hue-rotate(var(--hue-rotate, 0deg)) grayscale(var(--grayscale, 0%));
+}
